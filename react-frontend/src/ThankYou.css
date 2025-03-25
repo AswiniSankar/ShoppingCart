@@ -1,0 +1,36 @@
+
+.thank-you-container-main{
+        display: flex;
+        justify-content: center;
+}
+
+.thank-you-container-next {
+    text-align: center;
+    padding: 20px;
+}
+
+.order-info-main{
+    display: grid;
+    justify-content: center;
+}
+
+.order-info {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.order-link, .invoice-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.order-link:hover, .invoice-link:hover {
+    color: #0056b3;
+}
+
+
+.payment-success{
+    display: grid;
+    justify-content: center;
+}

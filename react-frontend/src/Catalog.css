@@ -1,0 +1,29 @@
+.catalog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cart-summary {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.product-card {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

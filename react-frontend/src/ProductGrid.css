@@ -1,0 +1,133 @@
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: start; /* Prevent stretching */
+  justify-content: center; /* Center last row */
+  min-height: 600px; /* Ensures consistent height */
+}
+
+
+/* Prevent product cards from expanding unevenly */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;  /* Ensures all images take full width */
+  height: 200px; /* Fix height to prevent stretching */
+  object-fit: contain; /* Ensures images do not distort */
+  border-radius: 8px;
+}
+
+
+
+/* Product Info */
+.product-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 14px;
+  padding: 0 10px;
+  flex-grow: 1; /* Pushes button to the bottom */
+  min-height: 40px; /* Prevents height inconsistencies */
+}
+
+/* Pagination Container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination Buttons */
+.page-btn {
+  background: #1596ec;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.page-btn:hover {
+  background: #041f3d;
+}
+
+.page-btn.active {
+  background: #041f3d;
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: auto; /* Ensures button stays at the bottom */
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background: #218838;
+}
+
+
+/* Cart Indicator */
+.cart-indicator {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #ff9800;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.buy-now-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.buy-now-btn:hover {
+  background-color: #e68900;
+}

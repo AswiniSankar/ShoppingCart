@@ -1,0 +1,52 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  cursor: pointer;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.action-button {
+  display: flex;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ✅ Show email tooltip on hover */
+.user-name:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}

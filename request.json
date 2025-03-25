@@ -1,0 +1,54 @@
+USER APIs
+1. GET http://127.0.0.1:5000/user
+Payload 
+{
+  
+    "email": "johndoe@example.com",
+    "password": "securepassword"
+}
+2. POST http://127.0.0.1:5000/user/signin
+payload
+{
+  
+    "email": "johndoe@example.com",
+    "password": "securepassword"
+}
+3. POST http://127.0.0.1:5000/user/guest
+Payload
+{
+
+        "name": "John Doe",
+        "email": "johnabraham@example.com"
+    
+}
+4. POST http://127.0.0.1:5000/user/signup
+{
+    "name": "johndoe729",
+    "email": "johndoe571@example.com",
+    "password": "securepassword"
+}
+
+
+4. GET http://127.0.0.1:5000/user
+
+Product APIs
+1. GET http://127.0.0.1:5000/product/
+2. GET http://127.0.0.1:5000/product/<PRODUCT_ID>
+3. POST http://127.0.0.1:5000/product/
+Payload
+{
+    "name": "Product1",
+    "price": 99.99,
+    "description": "This is a sample product",
+    "image_url": "http://example.com/product1.jpg"
+}
+4. PUT http://127.0.0.1:5000/products/<PRODUCT_ID>
+Payload
+{
+    "name": "Product1",
+    "price": 99.99,
+    "description": "This is a sample product",
+    "image_url": "http://example.com/product1.jpg"
+}
+5. DELETE http://127.0.0.1:5000/product/<PRODUCT_ID>
+
